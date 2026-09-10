@@ -8,6 +8,7 @@ Personal link-in-bio page built with HTML, CSS, and JavaScript.
 .
 ├── assets
 │   ├── avatar.jpg
+│   ├── og-image.jpg
 │   └── favicons/
 ├── index.html
 ├── style.css

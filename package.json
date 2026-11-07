@@ -1,0 +1,15 @@
+{
+  "name": "bio-page",
+  "version": "1.0.0",
+  "description": "Bassam Al-Araby — link-in-bio page built with Eleventy.",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "test": "npm run build && node --test test/"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "html-validate": "^11.17.0"
+  }
+}

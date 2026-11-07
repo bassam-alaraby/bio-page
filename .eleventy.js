@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Repo tooling and docs are not part of the published site.
-  for (const entry of [".github", "test", "node_modules"]) {
+  for (const entry of ["*.md", ".github", "test", "node_modules"]) {
     eleventyConfig.ignores.add(entry);
   }
 

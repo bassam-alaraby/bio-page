@@ -1,0 +1,66 @@
+{
+  "name": "Bassam Al-Araby",
+  "url": "https://links.bassamalaraby.me",
+  "title": "Bassam Al-Araby — Links",
+  "description": "CS student building with Flask, Django, and Python. Links to my portfolio, projects, and profiles.",
+  "author": "Bassam Tarek Al-Araby",
+  "jobTitle": "CS Student & Developer",
+  "og": {
+    "description": "CS student building with Flask, Django, and Python. Links to my portfolio, projects, and profiles.",
+    "image": "assets/meta/og-image.jpg",
+    "imageAlt": "Bassam Al-Araby"
+  },
+  "links": {
+    "email": "bassamalarabii@gmail.com",
+    "portfolio": "https://bassamalaraby.me",
+    "projects": "https://bassamalaraby.me/#projects",
+    "github": "https://github.com/bassam-alaraby",
+    "linkedin": "https://www.linkedin.com/in/bsam-alaraby/",
+    "facebook": "https://www.facebook.com/bsam.alaraby",
+    "instagram": "https://www.instagram.com/bsam.tarek/"
+  },
+  "media": {
+    "cv": "https://bassamalaraby.me/assets/documents/bassam-tarek-alaraby-cv.pdf",
+    "avatar": "assets/images/avatar.jpg"
+  },
+  "profile": {
+    "heading": "Bassam Tarek Al-Araby",
+    "bio": "CS student building with Flask, Django, and Python.",
+    "avatarAlt": "Portrait of Bassam Al-Araby"
+  },
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/portfolio",
+      "label": "View Portfolio",
+      "status": "200 OK",
+      "link": "portfolio",
+      "active": true
+    },
+    {
+      "method": "GET",
+      "path": "/cv.pdf",
+      "label": "Open My Resume",
+      "status": "200 OK",
+      "link": "cv",
+      "active": false
+    },
+    {
+      "method": "GET",
+      "path": "/projects",
+      "label": "View My Projects",
+      "status": "200 OK",
+      "link": "projects",
+      "active": false
+    },
+    {
+      "method": "POST",
+      "path": "/contact",
+      "label": "Send Email",
+      "status": "201 MAIL",
+      "link": "email",
+      "active": false
+    }
+  ],
+  "socials": ["github", "linkedin", "facebook", "instagram"]
+}

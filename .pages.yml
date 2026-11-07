@@ -1,0 +1,78 @@
+media:
+  - name: images
+    label: Images
+    input: assets/images
+    output: assets/images
+    categories: [image]
+  - name: meta
+    label: Meta (OG)
+    input: assets/meta
+    output: assets/meta
+    categories: [image]
+
+content:
+  - name: site
+    label: Site
+    type: file
+    path: _data/site.json
+    format: json
+    fields:
+      - { name: name, label: Name, type: string }
+      - { name: url, label: Site URL, type: string }
+      - { name: title, label: Page title, type: string }
+      - { name: description, label: Description, type: text }
+      - { name: author, label: Author, type: string }
+      - { name: jobTitle, label: Job title, type: string }
+      - name: og
+        label: Open Graph
+        type: object
+        fields:
+          - { name: description, label: OG description, type: text }
+          - { name: image, label: OG image, type: image, options: { media: meta } }
+          - { name: imageAlt, label: OG image alt, type: string }
+      - name: links
+        label: Links
+        type: object
+        fields:
+          - { name: email, label: Email, type: string }
+          - { name: portfolio, label: Portfolio, type: string }
+          - { name: projects, label: Projects, type: string }
+          - { name: github, label: GitHub, type: string }
+          - { name: linkedin, label: LinkedIn, type: string }
+          - { name: facebook, label: Facebook, type: string }
+          - { name: instagram, label: Instagram, type: string }
+      - name: media
+        label: Media
+        type: object
+        fields:
+          - { name: cv, label: CV URL, type: string }
+          - { name: avatar, label: Avatar, type: image, options: { media: images } }
+      - name: profile
+        label: Profile
+        type: object
+        fields:
+          - { name: heading, label: Name heading, type: string }
+          - { name: bio, label: Bio, type: string }
+          - { name: avatarAlt, label: Avatar alt, type: string }
+      - name: routes
+        label: Routes
+        type: object
+        list: true
+        fields:
+          - name: method
+            label: Method
+            type: select
+            options: { values: [GET, POST] }
+          - { name: path, label: Path, type: string }
+          - { name: label, label: Label, type: string }
+          - { name: status, label: Status, type: string }
+          - name: link
+            label: Link
+            type: select
+            options: { values: [portfolio, cv, projects, email] }
+          - { name: active, label: Highlighted, type: boolean }
+      - name: socials
+        label: Socials
+        type: select
+        list: true
+        options: { values: [github, linkedin, facebook, instagram] }

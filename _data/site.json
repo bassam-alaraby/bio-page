@@ -32,7 +32,7 @@
     {
       "method": "GET",
       "path": "/portfolio",
-      "label": "View Portfolio",
+      "label": "View My Portfolio",
       "status": "200 OK",
       "link": "portfolio",
       "active": true
@@ -62,5 +62,10 @@
       "active": false
     }
   ],
-  "socials": ["github", "linkedin", "facebook", "instagram"]
+  "socials": [
+    "github",
+    "linkedin",
+    "facebook",
+    "instagram"
+  ]
 }
